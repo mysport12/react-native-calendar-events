@@ -1163,7 +1163,7 @@ RCT_EXPORT_METHOD(removeEvent:(NSString *)eventId options:(NSDictionary *)option
 RCT_EXPORT_METHOD(openEventInCalendar:(NSString *)eventId resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
 {
     // Noop for iOS
-    resolve();
+    resolve(@"");
 }
 
 RCT_EXPORT_METHOD(uriForCalendars:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
